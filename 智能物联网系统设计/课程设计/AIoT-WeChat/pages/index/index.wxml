@@ -1,0 +1,113 @@
+<!--pages/index/index.wxml-->
+<view class="page-container">
+
+  <!-- 拍照控制区 -->
+  <view class="control-section">
+    <button class="capture-btn {{isPolling ? 'polling' : ''}}"
+            bindtap="onCapture"
+            disabled="{{isPolling}}">
+      <view class="capture-content">
+        <text class="btn-icon" wx:if="{{!isPolling}}">📷</text>
+        <text class="btn-text">{{isPolling ? '正在识别中...' : '拍照识别'}}</text>
+      </view>
+    </button>
+    <text class="status-text {{statusType}}">{{statusMessage}}</text>
+  </view>
+
+  <!-- 最新识别结果 -->
+  <view class="latest-section">
+    <view class="section-header">
+      <text class="section-title">最近识别结果</text>
+    </view>
+
+    <view class="empty-state" wx:if="{{allHistory.length === 0}}">
+      <text class="empty-icon">🗑️</text>
+      <text class="empty-text">暂无识别记录</text>
+      <text class="empty-hint">点击"拍照识别"按钮开始</text>
+    </view>
+
+    <view class="latest-card" wx:else bindtap="onLatestRecordTap">
+      <view class="card-image-wrapper">
+        <image class="card-image"
+               src="{{latestImageUrl || ''}}"
+               mode="aspectFill"
+               binderror="onImageError"
+               bindload="onImageLoad" />
+        <view class="image-loading" wx:if="{{!latestImageLoaded}}">
+          <text>加载中...</text>
+        </view>
+      </view>
+      <view class="card-info">
+        <view class="card-category {{latestRecord.resultClass || ''}}">
+          <text class="category-dot"></text>
+          <text class="category-text">{{latestRecord.result || '未知'}}</text>
+        </view>
+        <text class="card-time">{{latestRecord.time || '未知时间'}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 历史记录列表 -->
+  <view class="history-section" wx:if="{{allHistory.length > 0}}">
+    <view class="section-header">
+      <text class="section-title">历史记录</text>
+      <text class="record-count">共 {{allHistory.length}} 条</text>
+    </view>
+
+    <view class="history-list">
+      <view class="history-item"
+            wx:for="{{displayHistory}}"
+            wx:key="time"
+            wx:for-index="idx"
+            bindtap="onRecordTap"
+            data-index="{{idx}}">
+        <image class="history-thumb"
+               src="{{item.imageUrl || ''}}"
+               mode="aspectFill"
+               binderror="onImageError" />
+        <view class="history-info">
+          <view class="history-category {{item.resultClass || ''}}">
+            <text class="category-dot"></text>
+            <text class="category-text">{{item.result}}</text>
+          </view>
+          <text class="history-time">{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 分页控制 -->
+    <view class="pagination" wx:if="{{totalPages > 1}}">
+      <button class="page-btn"
+              bindtap="prevPage"
+              disabled="{{currentPage <= 1}}">
+        上一页
+      </button>
+      <text class="page-info">第{{currentPage}}/{{totalPages}}页</text>
+      <button class="page-btn"
+              bindtap="nextPage"
+              disabled="{{currentPage >= totalPages}}">
+        下一页
+      </button>
+    </view>
+  </view>
+
+  <!-- 图片预览模态框 -->
+  <view class="preview-overlay" wx:if="{{showPreview}}" bindtap="closePreview">
+    <view class="preview-container" catchtap="preventClose">
+      <image class="preview-image"
+             src="{{previewImageUrl}}"
+             mode="aspectFit" />
+      <view class="preview-info">
+        <text class="preview-category {{previewRecord.resultClass || ''}}">
+          <text class="category-dot"></text>
+          <text class="category-text">{{previewRecord.result}}</text>
+        </text>
+        <text class="preview-time">{{previewRecord.time}}</text>
+      </view>
+      <view class="preview-close" bindtap="closePreview">
+        <text class="close-icon">✕</text>
+      </view>
+    </view>
+  </view>
+
+</view>
