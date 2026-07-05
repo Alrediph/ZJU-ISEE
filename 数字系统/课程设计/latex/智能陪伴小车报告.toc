@@ -1,0 +1,53 @@
+\contentsline {section}{\numberline {1}项目的目的和要求}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}项目目的}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}项目实现要求}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}原理与设计}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}外观设计}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}系统总体架构}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}PID控制原理}{5}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}算法原理}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}双环 PID 结构}{5}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}超声波测距原理}{6}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}HC-SR04 传感器工作原理}{6}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}双路交替测距设计}{7}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}PWM 电机驱动原理}{7}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}H 桥驱动与 PWM 调速}{7}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}方向控制逻辑}{8}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}OLED显示与I2C通信原理}{8}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}SSD1306 OLED显示屏}{8}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}I2C 通信协议}{8}{subsubsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.7}情感化表情显示设计}{9}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}多模式行为切换设计}{9}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}语音识别与跨芯片异步通信}{10}{subsection.2.9}%
+\contentsline {section}{\numberline {3}测试和分析}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}自动跟随功能测试与分析}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}语音控制模式切换功能测试与分析}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}OLED 显示功能测试与分析}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}实践过程中的优化}{13}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}语音通信架构方案的迭代}{13}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}总线通信协议的精简}{13}{subsubsection.3.4.2}%
+\contentsline {section}{\numberline {4}项目成果}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}实物总览}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}实现的功能}{14}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}设计的课程知识运用}{16}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}运控模块：}{16}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}表情控制：}{16}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}设计的复杂性}{16}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}设计特点与创新}{17}{subsection.4.5}%
+\contentsline {section}{\numberline {5}总结}{17}{section.5}%
+\contentsline {subsection}{\numberline {5.1}设计完成情况}{17}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}不足与展望}{17}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}心得}{18}{subsection.5.3}%
+\contentsline {section}{\numberline {A}代码结构}{18}{section.A}%
+\contentsline {subsection}{\numberline {A.1}模块结构}{18}{subsection.A.1}%
+\contentsline {section}{\numberline {B}完整代码}{19}{section.B}%
+\contentsline {subsection}{\numberline {B.1}control.v}{19}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}OLED/iic.v}{35}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}OLED/font\_data.v}{47}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.4}OLED/Oled\_Top.v}{65}{subsection.B.4}%
+\contentsline {subsection}{\numberline {B.5}OLED/Oled\_Init.v}{71}{subsection.B.5}%
+\contentsline {subsection}{\numberline {B.6}OLED/Oled\_Show\_control.v}{73}{subsection.B.6}%
+\contentsline {subsection}{\numberline {B.7}OLED/Oled\_Show\_Info.v}{76}{subsection.B.7}%
+\contentsline {subsection}{\numberline {B.8}OLED/Oled\_Clear.v}{78}{subsection.B.8}%
+\contentsline {subsection}{\numberline {B.9}OLED/Oled\_On.v}{80}{subsection.B.9}%
+\contentsline {subsection}{\numberline {B.10}OLED/topcontrol.v}{82}{subsection.B.10}%

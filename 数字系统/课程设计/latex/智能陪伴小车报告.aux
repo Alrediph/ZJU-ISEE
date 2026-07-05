@@ -1,0 +1,100 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\HyPL@Entry{1<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}项目的目的和要求}{3}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}项目目的}{3}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}项目实现要求}{3}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}原理与设计}{4}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}外观设计}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces 外观设计图}}{4}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:外观设计}{{1}{4}{外观设计图}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}系统总体架构}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces 基于FPGA的智能陪伴小车异构控制系统总体架构图}}{5}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:system_architecture}{{2}{5}{基于FPGA的智能陪伴小车异构控制系统总体架构图}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}PID控制原理}{5}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}算法原理}{5}{subsubsection.2.3.1}\protected@file@percent }
+\newlabel{eq:pid_continuous}{{1}{5}{算法原理}{equation.1}{}}
+\newlabel{eq:pid_discrete}{{2}{5}{算法原理}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}双环 PID 结构}{5}{subsubsection.2.3.2}\protected@file@percent }
+\newlabel{eq:mixing}{{3}{6}{双环 PID 结构}{equation.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces PID 控制器实例化参数}}{6}{table.caption.4}\protected@file@percent }
+\newlabel{tab:pid_params}{{1}{6}{PID 控制器实例化参数}{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}超声波测距原理}{6}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}HC-SR04 传感器工作原理}{6}{subsubsection.2.4.1}\protected@file@percent }
+\newlabel{eq:distance}{{4}{6}{HC-SR04 传感器工作原理}{equation.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}双路交替测距设计}{7}{subsubsection.2.4.2}\protected@file@percent }
+\newlabel{eq:avg}{{5}{7}{双路交替测距设计}{equation.5}{}}
+\newlabel{eq:diff}{{6}{7}{双路交替测距设计}{equation.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}PWM 电机驱动原理}{7}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.1}H 桥驱动与 PWM 调速}{7}{subsubsection.2.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2}方向控制逻辑}{8}{subsubsection.2.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces 电机方向控制逻辑（适配 L298N）}}{8}{table.caption.5}\protected@file@percent }
+\newlabel{tab:motor_logic}{{2}{8}{电机方向控制逻辑（适配 L298N）}{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}OLED显示与I2C通信原理}{8}{subsection.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.1}SSD1306 OLED显示屏}{8}{subsubsection.2.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.2}I2C 通信协议}{8}{subsubsection.2.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7}情感化表情显示设计}{9}{subsection.2.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces 情感化表情显示的信号通路}}{9}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:emotion_path}{{3}{9}{情感化表情显示的信号通路}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8}多模式行为切换设计}{9}{subsection.2.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces 状态转换图}}{9}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:状态转换}{{4}{9}{状态转换图}{figure.caption.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces 小车 4 种运行模式定义}}{9}{table.caption.8}\protected@file@percent }
+\newlabel{tab:modes}{{3}{9}{小车 4 种运行模式定义}{table.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.9}语音识别与跨芯片异步通信}{10}{subsection.2.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces 包含语音识别交互与异步采样机制的系统总体架构原理图}}{10}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:system_architecture_v2}{{5}{10}{包含语音识别交互与异步采样机制的系统总体架构原理图}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces 语音模块代码}}{11}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:语音模块代码}{{6}{11}{语音模块代码}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}测试和分析}{12}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}自动跟随功能测试与分析}{12}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}语音控制模式切换功能测试与分析}{12}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}OLED 显示功能测试与分析}{12}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}实践过程中的优化}{13}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}语音通信架构方案的迭代}{13}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}总线通信协议的精简}{13}{subsubsection.3.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}项目成果}{13}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}实物总览}{13}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces 小车外观}}{14}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:外观}{{7}{14}{小车外观}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}实现的功能}{14}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces oled表情显示}}{15}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:表情}{{8}{15}{oled表情显示}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}设计的课程知识运用}{16}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}运控模块：}{16}{subsubsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}表情控制：}{16}{subsubsection.4.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}设计的复杂性}{16}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}设计特点与创新}{17}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}总结}{17}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}设计完成情况}{17}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}不足与展望}{17}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}心得}{18}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}代码结构}{18}{section.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}模块结构}{18}{subsection.A.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces 系统模块依赖关系图}}{19}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:full_deps}{{9}{19}{系统模块依赖关系图}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}完整代码}{19}{section.B}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}control.v}{19}{subsection.B.1}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}{\ignorespaces control.v —— 主控模块（PID + 超声波测距 + 电机控制）}}{19}{lstlisting.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}OLED/iic.v}{35}{subsection.B.2}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}{\ignorespaces iic.v —— I2C Master 通信协议}}{35}{lstlisting.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}OLED/font\_data.v}{47}{subsection.B.3}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3}{\ignorespaces font\_data.v —— 16×16 表情字模数据}}{47}{lstlisting.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.4}OLED/Oled\_Top.v}{65}{subsection.B.4}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4}{\ignorespaces Oled\_Top.v —— OLED 顶层调度状态机}}{65}{lstlisting.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.5}OLED/Oled\_Init.v}{71}{subsection.B.5}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5}{\ignorespaces Oled\_Init.v —— SSD1306 初始化配置}}{71}{lstlisting.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.6}OLED/Oled\_Show\_control.v}{73}{subsection.B.6}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6}{\ignorespaces Oled\_Show\_control.v —— 显示坐标定位}}{73}{lstlisting.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.7}OLED/Oled\_Show\_Info.v}{76}{subsection.B.7}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {7}{\ignorespaces Oled\_Show\_Info.v —— 显示信息输出}}{76}{lstlisting.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.8}OLED/Oled\_Clear.v}{78}{subsection.B.8}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {8}{\ignorespaces Oled\_Clear.v —— 全屏清除控制}}{78}{lstlisting.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.9}OLED/Oled\_On.v}{80}{subsection.B.9}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {9}{\ignorespaces Oled\_On.v—— 全屏点亮控制}}{80}{lstlisting.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.10}OLED/topcontrol.v}{82}{subsection.B.10}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {10}{\ignorespaces topcontrol.v —— OLED 顶层封装（SW 检测与自动复位）}}{82}{lstlisting.10}\protected@file@percent }
+\gdef \@abspage@last{85}
